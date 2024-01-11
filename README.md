@@ -13,7 +13,7 @@ cd kafka/bin/
 ```
 ./run-kakfa-mirror-maker.sh
 cd kafka/bin/
-./connect-mirror-maker.sh /data/active-to-active-mm2.properties
+./connect-mirror-maker.sh mm2-active-active.properties
 ```
 
 ```
