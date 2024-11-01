@@ -1,0 +1,117 @@
+{"client_addr":"10.170.231.148:39152","level":"info","msg":"Sent response.","req_id":104,"req_method":"POST","req_path":"/v1/data/kafka/authz/allow","resp_body":"{\"result\":true}\n","resp_bytes":16,"resp_duration":0.800394,"resp_status":200,"time":"2024-10-31T14:32:15Z"}
+{"client_addr":"10.170.231.148:39152","level":"info","msg":"Received request.","req_body":"{\"input\":{\"requestContext\":{\"clientAddress\":\"/172.16.176.173\",\"clientInformation\":{\"softwareName\":\"apache-kafka-java\",\"softwareVersion\":\"3.8.1\"},\"connectionId\":\"10.170.231.148:9093-172.16.176.173:60114-57553\",\"header\":{\"name\":{\"clientId\":\"consumer-x-team.teamwork.kafka.dev.tt.domain.com-1\",\"correlationId\":2,\"requestApiKey\":3,\"requestApiVersion\":12},\"headerVersion\":2},\"listenerName\":\"SSL\",\"principal\":{\"principalType\":\"User\",\"name\":\"OU=DPT,O=Tradeweb,C=US,ST=NJ,CN=x-team.teamwork.kafka.dev.tt.domain.com\"},\"securityProtocol\":\"SSL\"},\"action\":{\"resourcePattern\":{\"resourceType\":\"TOPIC\",\"name\":\"muniprice-tax-preds-credit-bm\",\"patternType\":\"LITERAL\",\"unknown\":false},\"operation\":\"DESCRIBE\",\"resourceReferenceCount\":1,\"logIfAllowed\":true,\"logIfDenied\":true}}}","req_id":105,"req_method":"POST","req_params":{},"req_path":"/v1/data/kafka/authz/allow","time":"2024-10-31T14:32:24Z"}
+{"client_addr":"10.170.231.148:39152","level":"info","msg":"Sent response.","req_id":105,"req_method":"POST","req_path":"/v1/data/kafka/authz/allow","resp_body":"{\"result\":false}\n","resp_bytes":17,"resp_duration":1.258399,"resp_status":200,"time":"2024-10-31T14:32:24Z"}
+{"client_addr":"10.170.231.148:39152","level":"info","msg":"Received request.","req_body":"{\"input\":{\"requestContext\":{\"clientAddress\":\"/172.16.176.173\",\"clientInformation\":{\"softwareName\":\"apache-kafka-java\",\"softwareVersion\":\"3.8.1\"},\"connectionId\":\"10.170.231.148:9093-172.16.176.173:60114-57553\",\"header\":{\"name\":{\"clientId\":\"consumer-x-team.teamwork.kafka.dev.tt.domain.com-1\",\"correlationId\":0,\"requestApiKey\":10,\"requestApiVersion\":4},\"headerVersion\":2},\"listenerName\":\"SSL\",\"principal\":{\"principalType\":\"User\",\"name\":\"OU=DPT,O=Tradeweb,C=US,ST=NJ,CN=x-team.teamwork.kafka.dev.tt.domain.com\"},\"securityProtocol\":\"SSL\"},\"action\":{\"resourcePattern\":{\"resourceType\":\"GROUP\",\"name\":\"x-team.teamwork.kafka.dev.tt.domain.com\",\"patternType\":\"LITERAL\",\"unknown\":false},\"operation\":\"DESCRIBE\",\"resourceReferenceCount\":1,\"logIfAllowed\":true,\"logIfDenied\":true}}}","req_id":106,"req_method":"POST","req_params":{},"req_path":"/v1/data/kafka/authz/allow","time":"2024-10-31T14:32:24Z"}
+{"client_addr":"10.170.231.148:39152","level":"info","msg":"Sent response.","req_id":106,"req_method":"POST","req_path":"/v1/data/kafka/authz/allow","resp_body":"{\"result\":false}\n","resp_bytes":17,"resp_duration":1.070062,"resp_status":200,"time":"2024-10-31T14:32:24Z"}
+
+
+
+KAFKA-JMS: INFO: 2024-10-31 16:01:44,216 [main] - ConsumerConfig values:
+  allow.auto.create.topics = true
+  auto.commit.interval.ms = 1000
+  auto.include.jmx.reporter = true
+  auto.offset.reset = latest
+  bootstrap.servers = [usta01x.domain.com:9093]
+  check.crcs = true
+  client.dns.lookup = use_all_dns_ips
+  client.id = consumer-x-team.teamwork.kafka.dev.x.domain.com-1
+  client.rack =
+  connections.max.idle.ms = 540000
+  default.api.timeout.ms = 60000
+  enable.auto.commit = true
+  enable.metrics.push = true
+  exclude.internal.topics = true
+  fetch.max.bytes = 52428800
+  fetch.max.wait.ms = 500
+  fetch.min.bytes = 1
+  group.id = x-team.teamwork.kafka.dev.x.domain.com
+  group.instance.id = null
+  group.protocol = classic
+  group.remote.assignor = null
+  heartbeat.interval.ms = 3000
+  interceptor.classes = []
+  internal.leave.group.on.close = true
+  internal.throw.on.fetch.stable.offset.unsupported = false
+  isolation.level = read_uncommitted
+  key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+  max.partition.fetch.bytes = 1048576
+  max.poll.interval.ms = 300000
+  max.poll.records = 500
+  metadata.max.age.ms = 300000
+  metadata.recovery.strategy = none
+  metric.reporters = []
+  metrics.num.samples = 2
+  metrics.recording.level = INFO
+  metrics.sample.window.ms = 30000
+  partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+  receive.buffer.bytes = 65536
+  reconnect.backoff.max.ms = 1000
+  reconnect.backoff.ms = 50
+  request.timeout.ms = 30000
+  retry.backoff.max.ms = 1000
+  retry.backoff.ms = 100
+  sasl.client.callback.handler.class = null
+  sasl.jaas.config = null
+  sasl.kerberos.kinit.cmd = /usr/bin/kinit
+  sasl.kerberos.min.time.before.relogin = 60000
+  sasl.kerberos.service.name = null
+  sasl.kerberos.ticket.renew.jitter = 0.05
+  sasl.kerberos.ticket.renew.window.factor = 0.8
+  sasl.login.callback.handler.class = null
+  sasl.login.class = null
+  sasl.login.connect.timeout.ms = null
+  sasl.login.read.timeout.ms = null
+  sasl.login.refresh.buffer.seconds = 300
+  sasl.login.refresh.min.period.seconds = 60
+  sasl.login.refresh.window.factor = 0.8
+  sasl.login.refresh.window.jitter = 0.05
+  sasl.login.retry.backoff.max.ms = 10000
+  sasl.login.retry.backoff.ms = 100
+  sasl.mechanism = GSSAPI
+  sasl.oauthbearer.clock.skew.seconds = 30
+  sasl.oauthbearer.expected.audience = null
+  sasl.oauthbearer.expected.issuer = null
+  sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+  sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+  sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+  sasl.oauthbearer.jwks.endpoint.url = null
+  sasl.oauthbearer.scope.claim.name = scope
+  sasl.oauthbearer.sub.claim.name = sub
+  sasl.oauthbearer.token.endpoint.url = null
+  security.protocol = SSL
+  security.providers = null
+  send.buffer.bytes = 131072
+  session.timeout.ms = 30000
+  socket.connection.setup.timeout.max.ms = 30000
+  socket.connection.setup.timeout.ms = 10000
+  ssl.cipher.suites = null
+  ssl.enabled.protocols = [TLSv1.2]
+  ssl.endpoint.identification.algorithm = HTTPS
+  ssl.engine.factory.class = null
+  ssl.key.password = [hidden]
+  ssl.keymanager.algorithm = SunX509
+  ssl.keystore.certificate.chain = null
+  ssl.keystore.key = null
+  ssl.keystore.location = C:\home\CERT\Kafka-MuniPrice\keystore.jks
+  ssl.keystore.password = [hidden]
+  ssl.keystore.type = JKS
+  ssl.protocol = TLSv1.2
+  ssl.provider = null
+  ssl.secure.random.implementation = null
+  ssl.trustmanager.algorithm = PKIX
+  ssl.truststore.certificates = null
+  ssl.truststore.location = null
+  ssl.truststore.password = null
+  ssl.truststore.type = JKS
+  value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+ 
+KAFKA-JMS: INFO: 2024-10-31 16:01:44,272 [main] - initializing Kafka metrics collector
+KAFKA-JMS: INFO: 2024-10-31 16:01:44,745 [main] - Kafka version: 3.8.1
+KAFKA-JMS: INFO: 2024-10-31 16:01:44,745 [main] - Kafka commitId: 70d6ff42debf7e17
+KAFKA-JMS: INFO: 2024-10-31 16:01:44,745 [main] - Kafka startTimeMs: 1730386904742
+KAFKA-JMS: INFO: 2024-10-31 16:01:44,748 [main] - [Consumer clientId=consumer-x-team.teamwork.kafka.dev.x.domain.com-1, groupId=x-team.teamwork.kafka.dev.x.domain.com] Subscribed to topic(s): muniprice-tax-preds-credit-bm
+Subscribed to topics [muniprice-tax-preds-credit-bm]
+KAFKA-JMS: WARN: 2024-10-31 16:01:45,280 [main] - [Consumer clientId=consumer-x-team.teamwork.kafka.dev.x.domain.com-1, groupId=x-team.teamwork.kafka.dev.x.domain.com] Error while fetching metadata with correlation id 2 : {muniprice-tax-preds-credit-bm=TOPIC_AUTHORIZATION_FAILED}
+KAFKA-JMS: ERROR: 2024-10-31 16:01:45,281 [main] - [Consumer clientId=consumer-x-team.teamwork.kafka.dev.x.domain.com-1, groupId=x-team.teamwork.kafka.dev.x.domain.com] Topic authorization failed for topics [muniprice-tax-preds-credit-bm]
+KAFKA-JMS: INFO: 2024-10-31 16:01:45,281 [main] - [Consumer clientId=consumer-x-team.teamwork.kafka.dev.x.domain.com-1, groupId=x-team.teamwork.kafka.dev.x.domain.com] Cluster ID: nddfggfrgrgrgr8PtQxU-CtWwddd
+Exception in thread "main" org.apache.kafka.common.errors.TopicAuthorizationException: Not authorized to access topics: [muniprice-tax-preds-credit-bm]
