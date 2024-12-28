@@ -19,9 +19,9 @@ public class KafkaSSLConsumer {
         
         // SSL Configuration
         props.put("security.protocol", "SSL");
-        props.put("ssl.truststore.location", "/path/to/kafka-client.jks");
+        props.put("ssl.truststore.location", "kafka-client.jks");
         props.put("ssl.truststore.password", "your-truststore-password");
-        props.put("ssl.keystore.location", "/path/to/kafka-client.jks");
+        props.put("ssl.keystore.location", "kafka-client.jks");
         props.put("ssl.keystore.password", "your-keystore-password");
         
         // Deserializer configuration
